@@ -1,0 +1,33 @@
+.profileBox{
+    background-color: bisque;
+    border:  1px solid bisque;
+    border-radius: 4px;
+}
+
+.profileBox p {
+    margin: 2px 4px;
+}
+.profile{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.fonStize{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sectionDesc{
+    text-align: left !important;
+}
+
+button img{
+    width: 20px;
+    padding: 0 2px;
+    -webkit-filter: invert(100%); filter: invert(100%);
+}
+
+button i{
+    padding: 0 4px;
+}
+

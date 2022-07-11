@@ -1,0 +1,11 @@
+.pointer i, .pointer p{
+    cursor: pointer !important;
+   }
+
+   .pointer a{
+       color: white;
+   }
+  
+   .right button{
+       float: right;
+   }

@@ -1,0 +1,92 @@
+<div class="header">
+    <h1 class="fontHead">Lab Results</h1>
+</div>
+
+<div class="row p-2 section">
+    <div class="col-6">
+        <div ngxHideOnScroll [classNameWhenHidden]="'nav--hidden'" class="col-12 section-1">
+            <app-doctor-note></app-doctor-note>
+        </div>
+
+        <div class=" ">
+            <div class="col-12 section-2">
+
+                <div class="left">
+                    <img src="../assets/circle-of-life.jpg" />
+                </div>
+                <div class="right">
+
+                    <p class="fonStize">Satecare Hicksville</p>
+                    <p> Wednesday June 11, 2022</p>
+                    <p> Reason for Visit : Covid Testing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Download my-1">
+            <div class="col-12 d-flex">
+
+                <div class="left">
+                    <h1>Results</h1>
+                </div>
+                <div class="right">
+
+                    <button type="button" class="btn btn-primary fonStize">Download Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-6 menu">
+        <ul *ngFor="let report of reports">
+            <li>
+                <div class="row">
+                    <div class="d-flex testreports">
+
+                        <p class="testName">{{report.name}}</p>
+                        <p class="result {{report.risk?'not':''}}">{{report.result}} <span class="fonStize">
+                                gm/dL</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex">
+
+                        <p class="commentWidt">{{report.comment}}</p>
+                        <p class="normalRange">{{report.normal}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="d-flex">
+        <div class="row pointer" (click)="landingPage()">
+            <a routerLink="/report-page" routerLinkActive="active">
+            <i class="fa fa-home pointer" style="font-size:36px"></i>
+            <p>Home</p>
+        </a>
+        </div>
+        <div class="row pointer" (click)="landingPage()">
+            <a routerLink="/visit-page" routerLinkActive="active">
+            <i class="fa fa-map-marker" style="font-size:36px"></i>
+            <p>Visit</p>
+        </a>
+        </div>
+        <div class="row pointer">
+            <a routerLink="/plan-page" routerLinkActive="active">
+                <i class="fa fa-plus-square" style="font-size:36px;"></i>
+                <p>Plan</p>
+            </a>
+        </div>
+        <div class="row pointer" (click)="landingPage()">
+            <a routerLink="/profile-page" routerLinkActive="active">
+            <i class="fa fa-user-o" style="font-size:36px"></i>
+            <p>Profile</p>
+        </a>
+        </div>
+    </div>
+</div>
