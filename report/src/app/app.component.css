@@ -22,14 +22,15 @@ html {
 }
 
 .header {
-  background-color: rgb(104, 241, 104);
-  color: #ffffff;
+  background-color: #9ACF8C;
+  color: #1E3565;
   padding: 50px 50px 80px;
   text-align: center;
   position: sticky;
   top: 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-size: 20px;
 }
 
 .fontHead{
@@ -65,7 +66,7 @@ div .nav--hidden {
   z-index: 1;
   top: -70px;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -75,7 +76,7 @@ div .nav--hidden {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: #F3F3F3;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -97,11 +98,12 @@ div .nav--hidden {
 }
 
 .menu li {
-  padding: 16px;
+  padding: 5px 20px;
   margin-bottom: 7px;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: #F3F3F3;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 95px;
 }
 
 .menu li:hover {
@@ -124,15 +126,16 @@ div .nav--hidden {
   padding: 10px 20px;
 }
 
+
 .testreports .testName{
-  font-size:  2rem;
+  font-size:  18px;
   font-weight:  bold;
-  color: rgb(11, 91, 110);
+  color: #1E3565;
 }
 
 .testreports .result{
-  color: greenyellow;
-  font-size: 2.5rem;
+  color: #9ACF8C;;
+  font-size: 30px;
 }
 
 .testreports .not{
@@ -147,6 +150,7 @@ div .nav--hidden {
   width: 45%;
   font-weight:  500;
   color: black;
+  font-size: 12px;
 }
 
 

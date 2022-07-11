@@ -8,4 +8,23 @@
   
    .right button{
        float: right;
+       background-color: #9ACF8C;
+       color: #1E3565;
+       border: 1px solid #9ACF8C;
+   }
+
+   .section-2 .right{
+    color: #1E3565;
+   }
+   .left h1{
+       font-size: 22px;
+       color: #1E3565;
+   }
+
+   .testreports{
+       max-height: 45px;
+   }
+
+   .testreportsecRow{
+       max-height: 50px;
    }

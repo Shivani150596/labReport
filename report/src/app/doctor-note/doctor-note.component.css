@@ -1,6 +1,6 @@
 .profileBox{
-    background-color: bisque;
-    border:  1px solid bisque;
+    background-color: #F3F3F3;
+    border:  1px solid #F3F3F3;
     border-radius: 4px;
 }
 
@@ -19,15 +19,28 @@
 
 .sectionDesc{
     text-align: left !important;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 button img{
     width: 20px;
     padding: 0 2px;
-    -webkit-filter: invert(100%); filter: invert(100%);
+    -webkit-filter: invert(100%); 
+    filter: invert(100%);
 }
 
 button i{
     padding: 0 4px;
 }
 
+.virtbtn{
+    color: #1E3565;
+    background-color: #9ACF8C;;
+    border: 1px solid #9ACF8C;
+}
+
+.inpersbtn{
+    background-color: #1E3565;
+    border: 1px solid #1E3565;
+}
