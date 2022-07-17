@@ -1,7 +1,14 @@
 .profileBox{
-    background-color: #F3F3F3;
     border:  1px solid #F3F3F3;
-    border-radius: 4px;
+    background: #F3F3F3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 2px;
+    height: 33px;
 }
 
 .profileBox p {
@@ -13,14 +20,33 @@
 }
 
 .fonStize{
-    font-size: 16px;
+    font-style: normal;
     font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1E3565;
 }
 
+.fontDoc{
+    font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+color: #1E3565;
+}
 .sectionDesc{
     text-align: left !important;
     font-size: 12px;
+    font-style: normal;
     font-weight: 500;
+    line-height: 14px;
+    color: #1E3565;
+    font-family: 'TodaySansNow Pro';
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+.sectionDesc p{
+    margin: 0px !important;
 }
 
 button img{
@@ -34,13 +60,31 @@ button i{
     padding: 0 4px;
 }
 
+.buttonFont{
+    font-style: normal;
+font-weight: 500;
+font-size: 10.2641px;
+line-height: 12px;
+}
+
 .virtbtn{
     color: #1E3565;
     background-color: #9ACF8C;;
     border: 1px solid #9ACF8C;
+    height: 38.41px;
+    border-radius: 7.93582px;
+    width: 161.55px;
+
 }
 
 .inpersbtn{
     background-color: #1E3565;
     border: 1px solid #1E3565;
+    height: 38.41px;
+    color: #FFFFFF;
+    border-radius: 7.93582px;
+    width: 161.55px;
+}
+.btn{
+    padding: 0px !important;
 }

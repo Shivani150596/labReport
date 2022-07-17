@@ -6,25 +6,67 @@
        color: white;
    }
   
-   .right button{
+   .icons{
+    width: 48px;
+    height: 37px;
+   }
+
+   .rightSection button{
        float: right;
        background-color: #9ACF8C;
        color: #1E3565;
        border: 1px solid #9ACF8C;
+       font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+border-radius: 10px;
+padding: 12px 22px;
    }
 
    .section-2 .right{
     color: #1E3565;
    }
-   .left h1{
+   .leftSection h1{
        font-size: 22px;
        color: #1E3565;
+       font-weight: 500;
+line-height: 26px;
+   }
+
+   .unit{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
    }
 
    .testreports{
-       max-height: 45px;
+       max-height: 35px;
    }
 
    .testreportsecRow{
-       max-height: 50px;
+       max-height: 40px;
+   }
+
+   .vector{
+    padding-bottom: 5px;
+   }
+
+   .header img{
+    Width: 40px;
+    Height:20px;
+   }
+
+   .header .horizontalLines{
+    Width: 25px;
+    Height: 6px;
+    padding: 0px;
+   }
+   .menuCollapse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    }

@@ -1,40 +1,57 @@
-<div class="header">
-    <h1>Lab Results</h1>
+<div class="header d-flex">
+    <div class="row">
+        <img src="../../assets/LeftArrow.png">
+    </div>
+    <div>
+        <div>
+            <h1>Lab Results</h1>
+        </div>
+
+    </div>
+    <div class="row menuCollapse">
+        <img class="horizontalLines" src="../../assets/HorizontalLine.png">
+        <img class="horizontalLines" src="../../assets/HorizontalLine.png">
+        <img  class="horizontalLines" src="../../assets/HorizontalLine.png">
+    </div>
 </div>
 
-<div class="row p-2 section">
+<div class="row section">
     <div class="col-6">
-        <div ngxHideOnScroll [classNameWhenHidden]="'nav--hidden'" class="col-12 section-1">
-            <app-doctor-note></app-doctor-note>
+        <div class="col-12">
+            <div ngxHideOnScroll [classNameWhenHidden]="'nav--hidden'" class="section-1">
+                <app-doctor-note></app-doctor-note>
+            </div>
         </div>
 
-        <div class=" ">
-            <div class="col-12 section-2">
+        <div class="col-12">
+            <div class=" section-2">
 
                 <div class="left">
-                    <img src="../assets/circle-of-life.jpg" />
+                    <img src="../../assets/premises (3).png" />
                 </div>
                 <div class="right">
 
-                    <p class="fonStize">Satecare Hicksville</p>
-                    <p> Wednesday June 11, 2022</p>
-                    <p> Reason for Visit : Covid Testing</p>
+                    <p class="smallHeading">Satecare Hicksville</p>
+                    <p class="smalltext"> Wednesday June 11, 2022</p>
+                    <p class="smalltext"> Reason for Visit : Covid Testing</p>
                 </div>
             </div>
         </div>
 
-        <div class="Download my-1">
-            <div class="col-12 d-flex">
+        <div class="col-12">
+            <div class=" section-3">
 
-                <div class="left">
-                    <h1>Results</h1>
+                <div class="leftSection">
+                    <h1>Result</h1>
                 </div>
-                <div class="right">
+                <div class="rightSection">
 
-                    <button type="button" class="btn btn-primary fonStize">Download Results</button>
+                    <button type="button" class="btn btn-primary fonStize">Download Result</button>
                 </div>
             </div>
         </div>
+
+
     </div>
 
 
@@ -44,8 +61,8 @@
                 <div class="row">
                     <div class="d-flex testreports">
 
-                        <p class="testName">{{report.name}}</p>
-                        <p class="result {{report.risk?'not':''}}">{{report.result}} <span class="fonStize">
+                        <p class="testName">{{report.name}} <img class="vector" src="../../assets/Vector.png"></p>
+                        <p class="result {{report.risk?'not':''}}">{{report.result}} <span class="fonStize unit">
                                 gm/dL</span></p>
                     </div>
                 </div>
@@ -66,27 +83,40 @@
     <div class="d-flex">
         <div class="row pointer" (click)="landingPage()">
             <a routerLink="/report-page" routerLinkActive="active">
-            <i class="fa fa-home pointer" style="font-size:36px"></i>
-            <p>Home</p>
-        </a>
+                <!-- <i class="fa fa-home pointer" style="font-size:36px"></i> -->
+                <div class="p-1">
+                    <img src="../../assets/home.png" alt="homeIcon">
+                </div>
+
+                <p><a>Home</a></p>
+            </a>
         </div>
         <div class="row pointer" (click)="landingPage()">
             <a routerLink="/visit-page" routerLinkActive="active">
-            <i class="fa fa-map-marker" style="font-size:36px"></i>
-            <p>Visit</p>
-        </a>
+                <!-- <i class="fa fa-map-marker" style="font-size:36px"></i> -->
+                <div class="row icons p-1">
+                    <img src="../../assets/location.png" alt="locationIcone">
+                    <img src="../../assets/cutCircle.png" alt="liocationbelowpart">
+                </div>
+                <p><a>Visit</a></p>
+            </a>
         </div>
         <div class="row pointer">
             <a routerLink="/plan-page" routerLinkActive="active">
-                <i class="fa fa-plus-square" style="font-size:36px;"></i>
-                <p>Plan</p>
+                <i class="fa fa-plus-circle" style="font-size:36px;"></i>
+                <p><a>Plan</a></p>
             </a>
         </div>
         <div class="row pointer" (click)="landingPage()">
             <a routerLink="/profile-page" routerLinkActive="active">
-            <i class="fa fa-user-o" style="font-size:36px"></i>
-            <p>Profile</p>
-        </a>
+                <!-- <i class="fa fa-user-o" style="font-size:36px"></i> -->
+                <div class="row icons p-1">
+
+                    <img src="../../assets/UserFace.png" alt="userFace">
+                    <img src="../../assets/Userbody.png" alt="userbody">
+                </div>
+                <p><a>Profile</a></p>
+            </a>
         </div>
     </div>
 </div>

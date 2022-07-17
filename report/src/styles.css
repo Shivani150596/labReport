@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'TodaySansNow';
+    src: local('TodaySansNow'), url(./assets/fonts/customFonts/._Elsner+Flake-TodaySansNowProRegular.otf) format('opentype');
+}
