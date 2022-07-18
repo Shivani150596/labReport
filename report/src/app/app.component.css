@@ -273,10 +273,10 @@ line-height: 13px;
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  div .nav--hidden {
+  /* div .nav--hidden {
     transform: none;
     position: relative;
-  }
+  } */
 
   .section-1{
     position: relative;
