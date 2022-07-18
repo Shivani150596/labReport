@@ -3,3 +3,18 @@
     font-family: 'TodaySansNow';
     src: local('TodaySansNow'), url(./assets/fonts/customFonts/._Elsner+Flake-TodaySansNowProRegular.otf) format('opentype');
 }
+
+html{
+    width: 420px;
+    display: block;
+    margin: auto;
+  }
+  .col-6 {width: 100% !important;}
+  .col-12 {width: 100% !important;}
+
+  
+  /* @media only screen and (min-width: 429px) {
+    html{
+        width: 100vw;
+      }
+  } */
